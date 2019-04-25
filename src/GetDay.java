@@ -37,7 +37,7 @@ public class GetDay {
 		Calendar cal = Calendar.getInstance();
 //	    cal.setFirstDayOfWeek(Calendar.MONDAY);
 	    
-	    System.out.println("*" + year +  " " + month + "*");
+//	    System.out.println("*" + year +  " " + month + "*");
 	    
 		cal.set(Calendar.YEAR, Integer.parseInt(year));
 		cal.set(Calendar.MONTH, Integer.parseInt(month) - 1);
@@ -63,7 +63,7 @@ public class GetDay {
 			monthYouWant = (String) Window.months.getSelectedItem();
 			
 			firstDayOfThatWeek = "" + getDay(yearYouWant, monthYouWant);
-			System.out.println(yearYouWant +  " " + monthYouWant + " " + firstDayOfThatWeek);
+//			System.out.println(yearYouWant +  " " + monthYouWant + " " + firstDayOfThatWeek);
 			
 			int iMonthYouWant = Integer.parseInt(monthYouWant);
 			if (iMonthYouWant == 1 || iMonthYouWant == 3 || iMonthYouWant == 5 || iMonthYouWant == 7 || iMonthYouWant == 8 || 
