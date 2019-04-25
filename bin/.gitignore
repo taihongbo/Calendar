@@ -2,3 +2,6 @@
 /Test.class
 /Window.class
 /GetDay.class
+/ClickListener.class
+/Window$clickListener.class
+/GetDay$clickListener.class

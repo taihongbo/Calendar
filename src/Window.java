@@ -12,11 +12,14 @@ public class Window extends JFrame{
 	static public JComboBox<String> months = new JComboBox<String>();
 	
 	//Button
-	private JButton Today = new JButton("今天");
-	private JButton Ok = new JButton("确定");
+	static public JButton Today = new JButton("今天");
+	static public JButton Ok = new JButton("确定");
 	
 	//Body
-	private JPanel body = new JPanel();	
+	private JPanel body = new JPanel();
+	
+	//Days
+	static public JButton[] days = new JButton[42];
 		
 	public Window() {
 		super();
@@ -45,10 +48,11 @@ public class Window extends JFrame{
 		for (int i = 0; i < 7; i++) {
 			body.add(new JButton(GetDay.week[i]));
 		}
-		
+
 		for (int i = 0; i < 42; i++) {
-			body.add(new JButton("" + i));
+			days[i] = new JButton(" ");
+			body.add(days[i]);
 		}
 		this.add(body);
-	}	
+	}
 }
